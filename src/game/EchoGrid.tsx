@@ -113,7 +113,6 @@ function RevealCell({
         transition={{ delay: index * 0.02, duration: 0.5 }}
         style={{...style, boxShadow: "0 0 12px 3px rgba(74, 222, 128, 0.6), 0 0 24px 6px rgba(74, 222, 128, 0.25)"}}
         className={cn(radius, meta.bg, "relative flex items-center justify-center")}
-        style={{...style, boxShadow: "0 0 12px 3px rgba(74, 222, 128, 0.6), 0 0 24px 6px rgba(74, 222, 128, 0.25)"}}
       >
         <svg viewBox="0 0 24 24" className="w-5 h-5 text-background" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round">
           <polyline points="20 6 9 17 4 12" />

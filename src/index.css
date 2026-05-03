@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@theme {
+  --color-background: hsl(0 0% 5%);
+  --color-foreground: hsl(0 0% 98%);
+  --color-teal: hsl(174 58% 55%);
+  --color-coral: hsl(0 72% 65%);
+  --color-amber: hsl(38 92% 60%);
+  --color-lavender: hsl(258 60% 70%);
+  --color-cell-empty: hsl(0 0% 12%);
+  --color-muted-foreground: hsl(0 0% 55%);
+}
+:root {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 98%;
+  --teal: 174 58% 55%;
+  --coral: 0 72% 65%;
+  --amber: 38 92% 60%;
+  --lavender: 258 60% 70%;
+  --success: 142 70% 55%;
+  --cell-empty: 0 0% 12%;
+  --muted-foreground: 0 0% 55%;
+}
+
+html, body, #root {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.glow-teal { box-shadow: 0 0 18px 2px hsl(var(--teal) / 0.55), 0 0 36px 6px hsl(var(--teal) / 0.20); }
+.glow-coral { box-shadow: 0 0 18px 2px hsl(var(--coral) / 0.55), 0 0 36px 6px hsl(var(--coral) / 0.20); }
+.glow-amber { box-shadow: 0 0 18px 2px hsl(var(--amber) / 0.55), 0 0 36px 6px hsl(var(--amber) / 0.20); }
+.glow-lavender { box-shadow: 0 0 18px 2px hsl(var(--lavender) / 0.55), 0 0 36px 6px hsl(var(--lavender) / 0.20); }
+.tracking-wider-2 { letter-spacing: 0.35em; }
+.text-teal { color: hsl(174 58% 55%); }
+.bg-teal { background-color: hsl(174 58% 55%); }
+.text-background { color: hsl(0 0% 5%); }
+.bg-background { background-color: hsl(0 0% 5%); }
+.text-foreground { color: hsl(0 0% 98%); }
+.bg-foreground { background-color: hsl(0 0% 98%); }
+.bg-cell-empty { background-color: hsl(0 0% 12%); }
+.text-muted-foreground { color: hsl(0 0% 55%); }
+.bg-coral { background-color: hsl(0 72% 65%); }
+.bg-teal { background-color: hsl(174 58% 55%); }
+.bg-amber { background-color: hsl(38 92% 60%); }
+.bg-lavender { background-color: hsl(258 60% 70%); }
+.ring-coral { --tw-ring-color: hsl(0 72% 65%); }
+.ring-teal { --tw-ring-color: hsl(174 58% 55%); }
+.ring-amber { --tw-ring-color: hsl(38 92% 60%); }
+.ring-lavender { --tw-ring-color: hsl(258 60% 70%); }
+.glow-text {
+  text-shadow: 0 0 24px hsl(0 0% 100% / 0.35), 0 0 48px hsl(0 0% 100% / 0.15);
+}
+.glow-brain {
+  filter: drop-shadow(0 0 12px hsl(174 58% 55% / 0.45)) drop-shadow(0 0 28px hsl(174 58% 55% / 0.18));
+}
+.glow-text {
+  text-shadow: 0 0 24px hsl(0 0% 100% / 0.35), 0 0 48px hsl(0 0% 100% / 0.15);
+}
+.hover\:bg-foreground:hover { background-color: hsl(0 0% 98%); }
+.hover\:text-background:hover { color: hsl(0 0% 5%); }
+.hover\:brightness-110:hover { filter: brightness(1.1); }
+.hover\:opacity-100:hover { opacity: 1; }
+/* Cursor fix */
+button { cursor: pointer; }
+
+/* Amber/yellow color fix - more saturated like Lovable */
+.bg-amber { background-color: hsl(45 100% 55%); }
+
+/* Card glow effect for share screen */
+.glow-card {
+  box-shadow: 0 0 18px 3px hsl(0 0% 100% / 0.06),
+              0 0 40px 8px hsl(0 0% 100% / 0.03);
+  border: 1px solid hsl(0 0% 100% / 0.1);
+}
+
+/* Success glow fix - brighter green */
+.glow-success { 
+  box-shadow: 0 0 20px 8px lime;
+}
+.border-border { border-color: hsl(0 0% 100% / 0.1); }
